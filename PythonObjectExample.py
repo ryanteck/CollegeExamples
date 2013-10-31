@@ -10,7 +10,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-class Pie(object):
+class Pie:
 	flavour = "Steak"
 	crust = "Puff Pastry"
 	slices = "3"
@@ -19,5 +19,6 @@ class Pie(object):
 		#Eating a slice
 		if(slices != 0):
 			slices = slices -1
+			print "You eat a slice of Pie"
 		else:
 			print "All the pie has been eaten!"
