@@ -1,4 +1,9 @@
 <?php
+/*This code is Copyright Ryanteck LTD. 2013
+Used in Rastrack.co.uk addition.
+Not to be redistributed or modified.
+*/
+
 /* Time to complete the additon of the Pi
 We need to:
 1) Get all of the post data
@@ -38,8 +43,9 @@ $db = $m->selectDB("rastrack");
 $piscollection = $db->pis;
 include("inc/header.php");
 include("inc/solvemedialib.php");
-$privkey="2LlsUypgLG6PDS8Tocc8ky3He2oaYXmw";
-$hashkey="49BvH90yDPy3biLS0S7t9J4pT7OfVzTS";
+//These are two vars for captcha, not there to prevent spam abuse.
+$privkey="";
+$hashkey="";
 
 //Username
 if(isset($_POST['Username'])) {
